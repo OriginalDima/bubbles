@@ -1,0 +1,236 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-image: url('https://s-media-cache-ak0.pinimg.com/originals/5e/56/2d/5e562dddf0a703502c40842e0ca8f5d0.jpg');
+}
+
+.bubbles-conteiner {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.bubble {
+	position: absolute;
+	background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.5) 0%, rgba(43, 97, 202, 0.5) 70%);
+	box-shadow:inset 0px 20px 20px rgba(255, 255, 255, 0.3);
+	border-radius: 50%;
+}
+
+.bubble1 {
+	width: 180px;
+	height: 180px;
+	bottom: -200px;
+	animation: vertical-moves 7s 1s linear infinite,
+	horizontal-moves-bubble1 2s linear alternate infinite;
+}
+
+.bubble2 {
+	width: 80px;
+	height: 80px;
+	bottom: -100px;
+	animation: vertical-moves 5s 2s linear infinite,
+	horizontal-moves-bubble2 3s linear alternate infinite;
+}
+
+.bubble3 {
+	width: 130px;
+	height: 130px;
+	bottom: -150px;
+	animation: vertical-moves 5s 4s linear infinite,
+	horizontal-moves-bubble3 1s linear alternate infinite;
+}
+
+.bubble4 {
+	width: 100px;
+	height: 100px;
+	bottom: -150px;
+	animation: vertical-moves 6s 2s linear infinite,
+	horizontal-moves-bubble4 4s linear alternate infinite;
+}
+
+.bubble5 {
+	width: 200px;
+	height: 200px;
+	bottom: -250px;
+	animation: vertical-moves 8s 7s linear infinite,
+	horizontal-moves-bubble5 3s linear alternate infinite;
+}
+
+.bubble6 {
+	width: 150px;
+	height: 150px;
+	bottom: -150px;
+	animation: vertical-moves 5s 8s linear infinite,
+	horizontal-moves-bubble6 3s linear alternate infinite;
+}
+
+.bubble7 {
+	width: 90px;
+	height: 90px;
+	bottom: -100px;
+	animation: vertical-moves 4s 6s linear infinite,
+	horizontal-moves-bubble7 4s linear alternate infinite;
+}
+
+.bubble8 {
+	width: 190px;
+	height: 190px;
+	bottom: -250px;
+	animation: vertical-moves 7s 4s linear infinite,
+	horizontal-moves-bubble8 3s linear alternate infinite;
+}
+
+.bubble9 {
+	width: 170px;
+	height: 170px;
+	bottom: -250px;
+	animation: vertical-moves 6s 2s linear infinite,
+	horizontal-moves-bubble9 2s linear alternate infinite;
+	/*animation-duration: 7s, 5s;
+	animation-delay: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;*/
+}
+
+@keyframes vertical-moves {
+	0% {
+	transform: translateY(0);
+	}
+
+	100% {
+	transform: translateY(-1080px);
+	}
+}
+
+@keyframes horizontal-moves-bubble1 {
+	from {
+	left: 5%;
+	}
+
+	to {
+	left: 10%;
+	}
+}
+
+@keyframes horizontal-moves-bubble2 {
+	from {
+	left: 15%;
+	}
+
+	to {
+	left: 20%;
+	}
+}
+
+@keyframes horizontal-moves-bubble3 {
+	from {
+	left: 25%;
+	}
+
+	to {
+	left: 30%;
+	}
+}
+
+@keyframes horizontal-moves-bubble4 {
+	from {
+	left: 35%;
+	}
+
+	to {
+	left: 40%;
+	}
+}
+
+@keyframes horizontal-moves-bubble5 {
+	from {
+	left: 45%;
+	}
+
+	to {
+	left: 50%;
+	}
+}
+
+@keyframes horizontal-moves-bubble6 {
+	from {
+	left: 55%;
+	}
+
+	to {
+	left: 60%;
+	}
+}
+
+@keyframes horizontal-moves-bubble7 {
+	from {
+	left: 65%;
+	}
+
+	to {
+	left: 70%;
+	}
+}
+
+@keyframes horizontal-moves-bubble8 {
+	from {
+	left: 75%;
+	}
+
+	to {
+	left: 80%;
+	}
+}
+
+@keyframes horizontal-moves-bubble9 {
+	from {
+	left: 85%;
+	}
+
+	to {
+	left: 88%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	@keyframes vertical-moves {
+		0% {
+		}	
+		100% {
+		transform: translateY(-768px);
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	@keyframes vertical-moves {
+		0% {
+		transform: translateY(0);
+		}
+	
+		100% {
+		transform: translateY(-500px);
+		}
+	}
+}
+
+
+
+
+
