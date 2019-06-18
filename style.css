@@ -219,13 +219,20 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+	.bubble6, 
+	.bubble7,
+	.bubble8,
+	.bubble9 {
+		display: none;
+	}
+	
 	@keyframes vertical-moves {
 		0% {
 		transform: translateY(0);
 		}
 	
 		100% {
-		transform: translateY(-500px);
+		transform: translateY(-1000px);
 		}
 	}
 }
