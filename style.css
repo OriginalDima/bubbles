@@ -208,16 +208,6 @@ body {
 	}
 }
 
-@media screen and (max-width: 768px) {
-	@keyframes vertical-moves {
-		0% {
-		}	
-		100% {
-		transform: translateY(-768px);
-		}
-	}
-}
-
 @media screen and (max-width: 500px) {
 	.bubble6, 
 	.bubble7,
